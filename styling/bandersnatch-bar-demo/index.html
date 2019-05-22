@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .progress-containerTwo {
+            float: left;
+            width: 50%;
+            height: 15px;
+            background: #ccc;
+        }
+
+        .progress-barTwo {
+            float: right;
+            height: 15px;
+            background: red;
+            width: 100%;
+        }
+
+        .progress-container {
+            float: right;
+            width: 50%;
+            height: 15px;
+            background: #ccc;
+        }
+
+        .progress-bar {
+
+            height: 15px;
+            background: red;
+            width: 0%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+        <h1>Time Remaining</h1>
+        <div class="progress-containerTwo">
+            <div class="progress-barTwo" id="myBarTwo"></div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            console.log("DOM fully loaded and parsed");
+            countDown();
+        });
+
+        var remainingTime = 100;
+        var myTimer = setInterval(countDown, 100);
+
+
+            function countDown() {
+                console.log("count down called");
+                remainingTime --;
+                document.getElementById("myBar").style.width = remainingTime + "%";
+                document.getElementById("myBarTwo").style.width = remainingTime + "%";
+            }
+    </script>
+
+</body>
+
+</html>

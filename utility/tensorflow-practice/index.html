@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.2/dist/tf.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        const values = [];
+        for (let i = 0; i < 30; i++) {
+            values[i] = Math.floor(Math.random() * 100) + 1;
+        }
+        
+        const shape = [2, 5, 3];
+
+        const tense = tf.tensor3d(values, shape, 'int32');
+
+        const data =tf.tensor([0, 0, 127, 255, 100, 30, 300, 90], [2, 2, 2]);
+        tense.print();
+        console.log(tense.dataSync());
+    //   console.log(data);
+        //video tensorflow.js 6.3 ==== 5:49min
+     </script>
+</body>
+
+</html>

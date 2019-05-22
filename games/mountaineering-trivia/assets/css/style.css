@@ -1,0 +1,69 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+p {
+    font-size: 115%;
+}
+h1 {
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 315%;
+    text-align: center;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.80);
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.wrapper {
+    margin: 30px;
+    text-align: center;
+}
+
+.scoreboard {
+    display: none;
+    border-style: solid;
+    float: right;
+    width: 200px;
+    font-weight: bold;
+}
+
+#questionblock {
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 25px;
+    border-style: solid;
+    background: rgba(250, 249, 249, 0.75);
+    color: black;
+    width: 400px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+#answerblock {
+    margin: auto;
+}
+button {
+    margin: 10px;
+    background: black;
+    color: white;
+    width: 125px;
+    height: 35px;
+    border-radius: 25px;
+}
+
+img {
+    width: 250px;
+    border-style: solid;
+}
+
+#instructions {
+    font-size: 80%;
+}

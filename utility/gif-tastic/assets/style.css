@@ -1,0 +1,47 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    font-size: 150%;
+    color: white;
+    float: right;
+    border-style: solid;
+    padding: 20px;
+    border-width: 5px;
+    border-radius: 25px;
+}
+
+#add-topic {
+    background: white;
+    color: black;
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.topic-btn {
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+#topic-view {
+    margin: 0 100px;
+}
+.gifDiv {
+    float: left;
+    color: white;
+    font-weight: bolder;
+    font-size: 100%;
+    margin: 20px;
+}
+
+#topic-view {
+    margin: 120px 10%;
+}

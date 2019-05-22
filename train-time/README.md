@@ -1,1 +1,0 @@
-# firebase-train-hw

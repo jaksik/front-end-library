@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>The Goal Achiever</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="shortcut icon" href="images/smile.ico">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="position-sticky">
+      <h1 id="title">The Goal Achiever</h1>
+    </div>
+      <div id="quote-place">
+        <h2 class="text-center" id="qod-quote">
+          <script src="https://quotesondesign.com/api/3.0/api-3.0.js" type="text/javascript" charset="utf-8"></script>
+        </h2>
+      </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-6">
+          <div class="card-header">Data Input</div>
+          <div class="card-body">
+            <form>
+              <p id="error-message"></p>
+              <div class="form-group">
+                <label for="date-input"></label>Date (MM/DD/YYYY)</label>
+                <input class="form-control" type="date" id="date-input" required>
+              </div>
+              <div class="form-group">
+                <label for="weight-input">Current Weight</label>
+                <input class="form-control" id="weight-input" placeholder="Enter a Number" input type="number" required>
+              </div>
+              <div class="form-group" id="goal-input">
+                <label for="goal-weight-input">Goal Weight</label>
+                <input class="form-control" id="goal-weight-input" placeholder="Enter a Number" input type="number"
+                  required>
+              </div>
+              <button class="btn btn-primary float-right" id="add-weight-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 scroll">
+        <div class="card mb-6">
+          <div class="card-header"><span id="goalWeightDisplay"></span></div>
+          <div class="card-body table-wrapper-scroll-y">
+            <div id="data-input"></div>
+            <table class="table table-sm table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Current Weight</th>
+                  <th scope="col">Pounds To Goal</th>
+                </tr>
+              </thead>
+              <tbody id='data-table'>
+              </tbody>
+            </table>
+          </div>
+          <button class="btn btn-primary float-right" id="reset-data-btn">Reset Data</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card mb-8">
+          <div class="card-header" id="chart-data">Your Data</div>
+          <div class="card-body">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-header" id="recipe-box">Check out these recipes to help achieve your goal</div>
+          <div class="card-body">
+            <div class="scroll" id="Recipes"></div>
+          </div>
+        </div>
+      </div>    </div>
+    <br>
+    <div class="row">
+      
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>

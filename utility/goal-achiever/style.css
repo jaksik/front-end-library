@@ -1,0 +1,79 @@
+/* input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    outline: none;
+} */
+
+body {
+	background-image: url("images/blue.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#error-message { 
+    color: red;
+}
+
+#data-table {
+    overflow-y: scroll;
+}
+
+.recipeImage {
+    /* float: left;
+    justify-content: flex-start; */
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    margin: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 100%;
+}
+
+#goalWeightDisplay {
+    text-align: center;
+}
+
+.card-header {
+    background-color: lightskyblue;
+}
+
+#title {
+    text-align: center;
+    font-size: 85px;
+    color: white;
+    border-bottom-style: solid;
+}
+
+#quote-place {
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    width: 500px;
+}
+
+#recipe-box {
+    text-align: center;
+}
+
+#chart-data {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+.scroll {
+    max-height: 335px;
+    overflow-y: auto;
+}
+
+.bg-light {
+    background-color: rgb(0, 0, 0, 0);
+}
